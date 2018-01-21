@@ -10,7 +10,7 @@ methods unimplemented.
 This module doesn't uses PROPFIND and OPTIONS commands for work.
 
 
-##Installation
+## Installation
 ```shell
 perl Makefile.PL
 make
@@ -22,7 +22,7 @@ make install
 cpan -i HTTP::DAV::Nginx
 ```
 
-##Example
+## Example
 ```perl
 use HTTP::DAV::Nginx;
 
@@ -47,9 +47,9 @@ $ua = $dav->useragent;
 ```
 
 
-##Methods
+## Methods
 
-###new(URI, [PARAMS])
+### new(URI, [PARAMS])
 Create a new HTTP::DAV::Nginx object;
 ```perl
 my $dav = HTTP::DAV::Nginx->new('http://host.org:8080/dav/');
@@ -120,5 +120,5 @@ $dav->delete('uri', depth => 'infinity');
 return LWP::UserAgent object for custom options (i.e. proxy, cookie etc)
 
 
-###err
+### err
 return last error string
